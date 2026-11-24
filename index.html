@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Anshul Verma - B.Tech CSE (AI & ML) Student at Shri Ramswaroop Memorial University. Aspiring Software Developer & AI Engineer.">
+    <meta name="keywords" content="Anshul Verma, SRMU, Shri Ramswaroop Memorial University, AI Engineer, Machine Learning, Software Developer, Robotics, Game Development, Portfolio">
+    <meta name="author" content="Anshul Verma">
+    <meta name="theme-color" content="#05050a">
+
+    <!-- Open Graph / LinkedIn / WhatsApp Preview Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Anshul Verma | AI Engineer & Software Developer">
+    <meta property="og:description" content="B.Tech CSE (AI & ML) student at Shri Ramswaroop Memorial University building intelligent neural systems, robotics, games, and scalable software.">
+    <meta property="og:image" content="profile.jpg">
+
+    <!-- Twitter Card Preview Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Anshul Verma | AI Engineer & Software Developer">
+    <meta name="twitter:description" content="B.Tech CSE (AI & ML) student at Shri Ramswaroop Memorial University.">
+    <meta name="twitter:image" content="profile.jpg">
+
+    <title>Anshul Verma | AI Engineer & Software Developer</title>
+
+    <!-- Custom Glowing <AV/> SVG Favicon (Zero external files needed) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2305050a'/%3E%3Crect x='2' y='2' width='60' height='60' rx='14' fill='none' stroke='%237c3aed' stroke-width='3'/%3E%3Ctext x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-weight='bold' font-size='26' fill='%23c084fc'%3EAV%3C/text%3E%3C/svg%3E">
+
+    <!-- Google Fonts: Space Grotesk (Headings), Inter (Body), JetBrains Mono (Code) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+    <!-- Top Laser Scroll Progress Bar -->
+    <div class="scroll-progress-bar" id="scroll-progress-bar"></div>
+<body>
+
+    <!-- Custom Interactive Cursor -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <!-- Ambient Glowing Background Orbs & Neural Canvas -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <canvas id="neural-canvas"></canvas>
+
+    <!-- ==================== NAVIGATION BAR ==================== -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo" data-cursor="hover">
+                <span class="logo-bracket">&lt;</span>AV<span class="logo-slash">/</span><span class="logo-bracket">&gt;</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active" data-cursor="hover">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-cursor="hover">About</a></li>
+                    <li><a href="#skills" class="nav-link" data-cursor="hover">Skills</a></li>
+                    <li><a href="#projects" class="nav-link" data-cursor="hover">Projects</a></li>
+                    <li><a href="#contact" class="nav-link" data-cursor="hover">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <div class="status-badge" title="Available for Internships & Projects">
+                    <span class="status-dot"></span>
+                    <span class="status-text">Available for Work</span>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation" data-cursor="hover">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main>
+        <!-- ==================== HERO SECTION ==================== -->
+        <section class="hero-section" id="hero">
+          
+            <div class="container hero-container">
+                
+                <!-- Left Column: Typography & CTA -->
+                <div class="hero-content reveal-left">
+                    <div class="system-pill">
+                        <span class="pulse-icon"></span>
+                        <span class="mono-text">SYS.INIT() // AI &amp; SOFTWARE ARCHITECTURE</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Hi, I'm <br>
+                        <span class="gradient-text">Anshul Verma</span>
+                    </h1>
+
+                    <div class="hero-typing-wrapper">
+                        <span class="typing-prefix">I engineer </span>
+                        <span class="typing-text" id="typing-text"></span>
+                        <span class="typing-cursor">|</span>
+                    </div>
+
+                    <p class="hero-description">
+                        A passionate <strong>B.Tech Computer Science Engineering (AI &amp; ML)</strong> student at 
+                        <span class="highlight-text">Shri Ramswaroop Memorial University</span>. Dedicated to building intelligent neural systems, autonomous robotics, immersive games, and scalable software architectures.
+                    </p>
+
+                    <div class="hero-cta-group">
+                      
+                                          <div class="hero-cta-group">
+                        <a href="#projects" class="btn btn-primary" data-cursor="hover">
+                            <span>Explore My Work</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#contact" class="btn btn-glass" data-cursor="hover">
+                            <span>Let's Connect</span>
+                        </a>
+                        <a href="resume.pdf" download="Anshul_Verma_Resume.pdf" class="btn btn-cv" id="download-cv-btn" data-cursor="hover">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            <span>Resume / CV</span>
+                        </a>
+                    </div>
+                    </div>
+
+                    <!-- Quick Highlights Bar -->
+                    <div class="hero-metrics">
+                        <div class="metric-item">
+                            <span class="metric-value">AI &amp; ML</span>
+                            <span class="metric-label">Core Specialization</span>
+                        </div>
+                        <div class="metric-divider"></div>
+                        <div class="metric-item">
+                            <span class="metric-value">SRMU</span>
+                            <span class="metric-label">B.Tech CSE Undergraduate</span>
+                        </div>
+                        <div class="metric-divider"></div>
+                        <div class="metric-item">
+                            <span class="metric-value">Multi-Disciplinary</span>
+                            <span class="metric-label">SoftDev • Robotics • GameDev</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Interactive 3D Holographic AI Card -->
+                <div class="hero-visual reveal-right">
+                    <div class="hologram-wrapper" id="tilt-card" data-cursor="hover">
+                        
+                        <!-- Floating Orbit Badges -->
+                        <div class="floating-badge badge-ai">
+                            <span class="badge-icon">🧠</span>
+                            <span>Neural Networks</span>
+                        </div>
+                        <div class="floating-badge badge-robotics">
+                            <span class="badge-icon">🤖</span>
+                            <span>Robotics &amp; IoT</span>
+                        </div>
+                        <div class="floating-badge badge-gamedev">
+                            <span class="badge-icon">🎮</span>
+                            <span>Game Engines</span>
+                        </div>
+
+                        <!-- Main Glassmorphic Code/AI Terminal Card -->
+                        <div class="cyber-card">
+                            <div class="card-header">
+                                <div class="window-controls">
+                                    <span class="control red"></span>
+                                    <span class="control yellow"></span>
+                                    <span class="control green"></span>
+                                </div>
+                                <span class="card-filename">anshul_profile_matrix.py</span>
+                            </div>
+
+                            <div class="card-body">
+                              <!-- NEW: Developer Holographic ID Strip -->
+                                <div class="dev-id-strip">
+                                    <div class="dev-avatar-ring">
+                                        <img src="profile.jpg" alt="Anshul Verma" class="dev-avatar-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        <div class="avatar-fallback" style="display: none;">AV</div>
+                                        <span class="avatar-online-dot"></span>
+                                    </div>
+                                    <div class="dev-id-meta">
+                                        <span class="dev-id-name">Anshul Verma</span>
+                                        <span class="dev-id-role">B.Tech CSE (AI &amp; ML) • SRMU</span>
+                                    </div>
+                                    <span class="dev-id-badge">ID // AV-AI</span>
+                                </div>
+                                <pre class="code-block"><code><span class="c-keyword">class</span> <span class="c-class">AIEngineer</span>:
+    <span class="c-keyword">def</span> <span class="c-func">__init__</span>(<span class="c-self">self</span>):
+        <span class="c-self">self</span>.name = <span class="c-string">"Anshul Verma"</span>
+        <span class="c-self">self</span>.degree = <span class="c-string">"B.Tech CSE (AI &amp; ML)"</span>
+        <span class="c-self">self</span>.university = <span class="c-string">"SRMU"</span>
+        <span class="c-self">self</span>.interests = [
+            <span class="c-string">"Artificial Intelligence"</span>,
+            <span class="c-string">"Machine Learning"</span>,
+            <span class="c-string">"Robotics"</span>,
+            <span class="c-string">"Software &amp; Game Dev"</span>
+        ]
+
+    <span class="c-keyword">def</span> <span class="c-func">mission</span>(<span class="c-self">self</span>):
+        <span class="c-keyword">return</span> <span class="c-string">"Building intelligent systems for tomorrow."</span></code></pre>
+
+                                <!-- Animated AI Core Visualizer inside Card -->
+                                <div class="ai-core-status">
+                                    <div class="core-ring">
+                                        <div class="core-inner"></div>
+                                    </div>
+                                    <div class="core-telemetry">
+                                        <span class="telemetry-title">NEURAL ENGINE STATUS</span>
+                                        <span class="telemetry-state">OPTIMAL // READY TO DEPLOY</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Scroll Down Indicator -->
+            <a href="#about" class="scroll-indicator" aria-label="Scroll Down" data-cursor="hover">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span class="scroll-text">Scroll to Explore</span>
+            </a>
+        </section>
+                <!-- ==================== ABOUT SECTION ==================== -->
+        <section class="about-section section-padding" id="about">
+            <div class="container">
+                
+                <!-- Section Header -->
+                <div class="section-header reveal-up">
+                    <div class="section-tag">
+                        <span class="tag-number">01.</span>
+                        <span class="tag-text">// SYSTEM.IDENTITY &amp; ORIGIN</span>
+                    </div>
+                    <h2 class="section-title">
+                        Architecting <span class="gradient-text">Intelligence</span> &amp; Digital Worlds
+                    </h2>
+                    <p class="section-subtitle">
+                        Bridging the gap between theoretical machine learning, autonomous hardware, and high-performance software engineering.
+                    </p>
+                </div>
+
+                <!-- Interactive Bento Grid -->
+                <div class="bento-grid">
+
+                                        <!-- Bento Card 1: Main Bio, Holographic Portrait & Career Goal (Spans 7 columns) -->
+                    <div class="bento-card bento-bio reveal-up" data-cursor="hover">
+                        <div class="card-glow"></div>
+                        <div class="bento-content bio-split-layout">
+                            
+                            <!-- Left: Futuristic Holographic Portrait Frame -->
+                            <div class="cyber-portrait-wrapper">
+                                <div class="cyber-portrait-frame">
+                                    <!-- HUD Corner Brackets -->
+                                    <span class="hud-corner corner-tl"></span>
+                                    <span class="hud-corner corner-tr"></span>
+                                    <span class="hud-corner corner-bl"></span>
+                                    <span class="hud-corner corner-br"></span>
+
+                                    <!-- Animated Laser Scanline -->
+                                    <div class="portrait-scanline"></div>
+
+                                    <!-- Your Photo (with automatic fallback if profile.jpg is missing) -->
+                                    <img src="profile.jpg" alt="Anshul Verma - AI & Software Developer" class="cyber-portrait-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                    
+                                    <!-- Fallback Monogram if photo isn't added yet -->
+                                    <div class="portrait-fallback" style="display: none;">
+                                        <span class="fallback-initials">&lt;AV/&gt;</span>
+                                        <span class="fallback-hint">Place profile.jpg in folder</span>
+                                    </div>
+
+                                    <!-- Bottom Glassmorphic Telemetry Tag -->
+                                    <div class="portrait-hud-tag">
+                                        <span class="status-dot"></span>
+                                        <span>VERIFIED // AI &amp; DEV</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Right: Bio Text & Career Objective -->
+                            <div class="bio-text-column">
+                                <div class="bento-badge">
+                                    <span class="badge-dot"></span>
+                                    <span>DEVELOPER PROFILE</span>
+                                </div>
+                                <h3 class="bento-heading">
+                                    Driven by Curiosity. Powered by Code &amp; Algorithms.
+                                </h3>
+                                <p class="bento-text">
+                                    Hello! I'm <strong>Anshul Verma</strong>, a technologist and developer fascinated by how lines of code can think, learn, and interact with the physical and virtual worlds. Whether I am training a machine learning model, programming microcontroller logic for robotics, architecting applications, or building game mechanics, I thrive on solving complex engineering challenges.
+                                </p>
+                                <div class="career-goal-box">
+                                    <div class="goal-icon">🎯</div>
+                                    <div class="goal-details">
+                                        <span class="goal-label">CAREER OBJECTIVE</span>
+                                        <p class="goal-statement">
+                                            To evolve into a world-class <strong>Software Developer &amp; AI Engineer</strong>, creating intelligent, scalable, and impactful technology solutions.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Bento Card 2: Education / SRMU Spotlight (Spans 5 columns) -->
+                    <div class="bento-card bento-education reveal-up" style="transition-delay: 0.1s;" data-cursor="hover">
+                        <div class="card-glow"></div>
+                        <div class="bento-content">
+                            <div class="edu-header">
+                                <div class="bento-badge">
+                                    <span class="badge-dot pulse-blue"></span>
+                                    <span>ACADEMIC CREDENTIALS</span>
+                                </div>
+                                <span class="edu-status">ACTIVE UNDERGRADUATE</span>
+                            </div>
+
+                            <div class="edu-main">
+                                <div class="uni-icon">🎓</div>
+                                <h3 class="degree-title">B.Tech in Computer Science Engineering</h3>
+                                <div class="spec-badge">Specialization: Artificial Intelligence &amp; Machine Learning</div>
+                                <p class="uni-name">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                    Shri Ramswaroop Memorial University (SRMU)
+                                </p>
+                            </div>
+
+                            <div class="coursework-wrapper">
+                                <span class="coursework-title">CORE ACADEMIC PILLARS</span>
+                                <div class="coursework-tags">
+                                    <span class="c-tag">Artificial Intelligence</span>
+                                    <span class="c-tag">Machine Learning</span>
+                                    <span class="c-tag">Data Structures &amp; Algorithms</span>
+                                    <span class="c-tag">Object-Oriented Programming</span>
+                                    <span class="c-tag">Neural Networks</span>
+                                    <span class="c-tag">Robotics &amp; Automation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bento Card 3: Domain 1 - AI & ML -->
+                    <div class="bento-card bento-domain reveal-up" style="transition-delay: 0.15s;" data-cursor="hover">
+                        <div class="card-glow"></div>
+                        <div class="bento-content">
+                            <div class="domain-icon-wrap">
+                                <span class="domain-emoji">🧠</span>
+                                <span class="domain-index">01</span>
+                            </div>
+                            <h4 class="domain-title">AI &amp; Machine Learning</h4>
+                            <p class="domain-desc">
+                                Designing predictive algorithms, neural networks, and data-driven models that turn raw data into actionable intelligence.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Bento Card 4: Domain 2 - Robotics -->
+                    <div class="bento-card bento-domain reveal-up" style="transition-delay: 0.2s;" data-cursor="hover">
+                        <div class="card-glow"></div>
+                        <div class="bento-content">
+                            <div class="domain-icon-wrap">
+                                <span class="domain-emoji">🤖</span>
+                                <span class="domain-index">02</span>
+                            </div>
+                            <h4 class="domain-title">Robotics &amp; Systems</h4>
+                            <p class="domain-desc">
+                                Bringing code into the physical realm through sensor integration, autonomous navigation, and embedded systems.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Bento Card 5: Domain 3 - Software Development -->
+                    <div class="bento-card bento-domain reveal-up" style="transition-delay: 0.25s;" data-cursor="hover">
+                        <div class="card-glow"></div>
+                        <div class="bento-content">
+                            <div class="domain-icon-wrap">
+                                <span class="domain-emoji">💻</span>
+                                <span class="domain-index">03</span>
+                            </div>
+                            <h4 class="domain-title">Software Engineering</h4>
+                            <p class="domain-desc">
+                                Writing clean, modular, and efficient code to build responsive web applications and robust backend architectures.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Bento Card 6: Domain 4 - Game Development -->
+                    <div class="bento-card bento-domain reveal-up" style="transition-delay: 0.3s;" data-cursor="hover">
+                        <div class="card-glow"></div>
+                        <div class="bento-content">
+                            <div class="domain-icon-wrap">
+                                <span class="domain-emoji">🎮</span>
+                                <span class="domain-index">04</span>
+                            </div>
+                            <h4 class="domain-title">Game Development</h4>
+                            <p class="domain-desc">
+                                Crafting interactive simulations, real-time physics, and intelligent NPC behaviors inside modern game engines.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Bento Card 7: Bottom Telemetry / Stats Strip (Spans full 12 columns) -->
+                    <div class="bento-card bento-stats reveal-up" style="transition-delay: 0.35s;" data-cursor="hover">
+                        <div class="card-glow"></div>
+                        <div class="bento-content stats-flex">
+                            <div class="stat-block">
+                                <div class="stat-number-wrap">
+                                    <span class="stat-counter" data-target="4">0</span>
+                                    <span class="stat-suffix">+</span>
+                                </div>
+                                <span class="stat-label">Core Engineering Domains</span>
+                            </div>
+
+                            <div class="stat-separator"></div>
+
+                            <div class="stat-block">
+                                <div class="stat-number-wrap">
+                                    <span class="stat-counter" data-target="15">0</span>
+                                    <span class="stat-suffix">+</span>
+                                </div>
+                                <span class="stat-label">Tools &amp; Technologies Explored</span>
+                            </div>
+
+                            <div class="stat-separator"></div>
+
+                            <div class="stat-block">
+                                <div class="stat-number-wrap">
+                                    <span class="stat-counter" data-target="100">0</span>
+                                    <span class="stat-suffix">%</span>
+                                </div>
+                                <span class="stat-label">Passion for Problem Solving</span>
+                            </div>
+
+                            <div class="stat-cta">
+                                <a href="#skills" class="btn btn-glass btn-sm" data-cursor="hover">
+                                    <span>Inspect Tech Arsenal</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+                <!-- ==================== SKILLS & TECH ARSENAL SECTION ==================== -->
+        <section class="skills-section section-padding" id="skills">
+            <div class="container">
+
+                <!-- Section Header -->
+                <div class="section-header reveal-up">
+                    <div class="section-tag">
+                        <span class="tag-number">02.</span>
+                        <span class="tag-text">// SYSTEM.CAPABILITIES &amp; STACK</span>
+                    </div>
+                    <h2 class="section-title">
+                        Technical <span class="gradient-text">Arsenal</span> &amp; Core Stack
+                    </h2>
+                    <p class="section-subtitle">
+                        A multi-disciplinary toolkit engineered for artificial intelligence, high-performance software, autonomous robotics, and interactive game worlds.
+                    </p>
+                </div>
+
+                <!-- Interactive Filter Tabs -->
+                <div class="skills-filter reveal-up" role="tablist" aria-label="Skill Categories">
+                    <button class="filter-btn active" data-filter="all" data-cursor="hover">
+                        <span>All Systems</span>
+                        <span class="filter-count">12</span>
+                    </button>
+                    <button class="filter-btn" data-filter="ai" data-cursor="hover">
+                        <span>AI &amp; Machine Learning</span>
+                        <span class="filter-count">4</span>
+                    </button>
+                    <button class="filter-btn" data-filter="software" data-cursor="hover">
+                        <span>Programming &amp; Software</span>
+                        <span class="filter-count">5</span>
+                    </button>
+                    <button class="filter-btn" data-filter="robotics-game" data-cursor="hover">
+                        <span>Robotics &amp; Game Dev</span>
+                        <span class="filter-count">3</span>
+                    </button>
+                </div>
+
+                <!-- Skills Interactive Grid -->
+                <div class="skills-grid" id="skills-grid">
+
+                    <!-- Skill 1: Python -->
+                    <div class="skill-card reveal-up" data-category="ai software" data-cursor="hover">
+                        <div class="card-glow"></div>
+                        <div class="skill-card-top">
+                            <div class="skill-icon-box">🐍</div>
+                            <span class="skill-domain-tag">AI &amp; Core</span>
+                        </div>
+                        <h3 class="skill-name">Python Programming</h3>
+                        <p class="skill-desc">Primary language for AI/ML pipelines, automation scripts, data structures, and backend logic.</p>
+                        <div class="skill-telemetry">
+                            <div class="telemetry-header">
+                                <span class="telemetry-label">PROFICIENCY INDEX</span>
+                                <span class="telemetry-val">90%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-level="90%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 2: Machine Learning & Deep Learning -->
+                    <div class="skill-card reveal-up" data-category="ai" data-cursor="hover">
+                        <div class="card-glow"></div>
+                        <div class="skill-card-top">
+                            <div class="skill-icon-box">🧠</div>
+                            <span class="skill-domain-tag">AI / ML</span>
+                        </div>
+                        <h3 class="skill-name">Machine Learning &amp; Neural Nets</h3>
+                        <p class="skill-desc">Supervised &amp; unsupervised learning, predictive modeling, classification, and neural architectures.</p>
+                        <div class="skill-telemetry">
+                            <div class="telemetry-header">
+                                <span class="telemetry-label">PROFICIENCY INDEX</span>
+                                <span class="telemetry-val">85%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-level="85%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 3: C & C++ -->
+                    <div class="skill-card reveal-up" data-category="software robotics-game" data-cursor="hover">
+                        <div class="card-glow"></div>
+                        <div class="skill-card-top">
+                            <div class="skill-icon-box">⚡</div>
+                            <span class="skill-domain-tag">Systems / DSA</span>
+                        </div>
+                        <h3 class="skill-name">C / C++ &amp; Algorithms</h3>
+                        <p class="skill-desc">High-performance programming, Object-Oriented Programming (OOP), and competitive DSA problem solving.</p>
+                        <div class="skill-telemetry">
+                            <div class="telemetry-header">
+                                <span class="telemetry-label">PROFICIENCY INDEX</span>
+                                <span class="telemetry-val">88%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-level="88%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 4: Data Science & Libraries -->
+                    <div class="skill-card reveal-up" data-category="ai" data-cursor="hover">
+                        <div class="card-glow"></div>
+                        <div class="skill-card-top">
+                            <div class="skill-icon-box">📊</div>
+                            <span class="skill-domain-tag">Data Science</span>
+                        </div>
+                        <h3 class="skill-name">NumPy, Pandas &amp; Scikit-Learn</h3>
+                        <p class="skill-desc">Data preprocessing, feature engineering, statistical analysis, and model evaluation workflows.</p>
+                        <div class="skill-telemetry">
+                            <div class="telemetry-header">
+                                <span class="telemetry-label">PROFICIENCY INDEX</span>
+                                <span class="telemetry-val">84%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-level="84%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 5: Modern Frontend (HTML5, CSS3, JS) -->
+                    <div class="skill-card reveal-up" data-category="software" data-cursor="hover">
+                        <div class="card-glow"></div>
+                        <div class="skill-card-top">
+                            <div class="skill-icon-box">🌐</div>
+                            <span class="skill-domain-tag">Web Dev</span>
+                        </div>
+                        <h3 class="skill-name">JavaScript (ES6+), HTML5 &amp; CSS3</h3>
+                        <p class="skill-desc">Crafting responsive, interactive, and animated web interfaces with clean semantic code.</p>
+                        <div class="skill-telemetry">
+                            <div class="telemetry-header">
+                                <span class="telemetry-label">PROFICIENCY INDEX</span>
+                                <span class="telemetry-val">88%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-level="88%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 6: Computer Vision & AI Tools -->
+                    <div class="skill-card reveal-up" data-category="ai robotics-game" data-cursor="hover">
+                        <div class="card-glow"></div>
+                        <div class="skill-card-top">
+                            <div class="skill-icon-box">👁️</div>
+                            <span class="skill-domain-tag">Vision AI</span>
+                        </div>
+                        <h3 class="skill-name">Computer Vision &amp; OpenCV</h3>
+                        <p class="skill-desc">Real-time image processing, object detection, and visual perception for AI and robotics systems.</p>
+                        <div class="skill-telemetry">
+                            <div class="telemetry-header">
+                                <span class="telemetry-label">PROFICIENCY INDEX</span>
+                                <span class="telemetry-val">80%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-level="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 7: Robotics & Embedded Systems -->
+                    <div class="skill-card reveal-up" data-category="robotics-game" data-cursor="hover">
+                        <div class="card-glow"></div>
+                        <div class="skill-card-top">
+                            <div class="skill-icon-box">🤖</div>
+                            <span class="skill-domain-tag">Hardware AI</span>
+                        </div>
+                        <h3 class="skill-name">Robotics, Arduino &amp; IoT</h3>
+                        <p class="skill-desc">Microcontroller programming, sensor fusion, motor control, and autonomous robotic prototypes.</p>
+                        <div class="skill-telemetry">
+                            <div class="telemetry-header">
+                                <span class="telemetry-label">PROFICIENCY INDEX</span>
+                                <span class="telemetry-val">82%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-level="82%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 8: Game Development -->
+                    <div class="skill-card reveal-up" data-category="robotics-game" data-cursor="hover">
+                        <div class="card-glow"></div>
+                        <div class="skill-card-top">
+                            <div class="skill-icon-box">🎮</div>
+                            <span class="skill-domain-tag">Simulation</span>
+                        </div>
+                        <h3 class="skill-name">Game Engines &amp; Interactive Logic</h3>
+                        <p class="skill-desc">2D/3D game mechanics, physics simulations, C# scripting, and intelligent NPC pathfinding.</p>
+                        <div class="skill-telemetry">
+                            <div class="telemetry-header">
+                                <span class="telemetry-label">PROFICIENCY INDEX</span>
+                                <span class="telemetry-val">78%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-level="78%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 9: Java & OOP Architecture -->
+                    <div class="skill-card reveal-up" data-category="software" data-cursor="hover">
+                        <div class="card-glow"></div>
+                        <div class="skill-card-top">
+                            <div class="skill-icon-box">☕</div>
+                            <span class="skill-domain-tag">Software Eng</span>
+                        </div>
+                        <h3 class="skill-name">Java &amp; Object-Oriented Design</h3>
+                        <p class="skill-desc">Modular software design patterns, multithreading, and scalable application architecture.</p>
+                        <div class="skill-telemetry">
+                            <div class="telemetry-header">
+                                <span class="telemetry-label">PROFICIENCY INDEX</span>
+                                <span class="telemetry-val">80%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-level="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 10: TensorFlow / PyTorch Foundations -->
+                    <div class="skill-card reveal-up" data-category="ai" data-cursor="hover">
+                        <div class="card-glow"></div>
+                        <div class="skill-card-top">
+                            <div class="skill-icon-box">🔥</div>
+                            <span class="skill-domain-tag">Deep Learning</span>
+                        </div>
+                        <h3 class="skill-name">Deep Learning Frameworks</h3>
+                        <p class="skill-desc">Building and training neural networks using TensorFlow, Keras, and PyTorch ecosystems.</p>
+                        <div class="skill-telemetry">
+                            <div class="telemetry-header">
+                                <span class="telemetry-label">PROFICIENCY INDEX</span>
+                                <span class="telemetry-val">76%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-level="76%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 11: SQL & Databases -->
+                    <div class="skill-card reveal-up" data-category="software" data-cursor="hover">
+                        <div class="card-glow"></div>
+                        <div class="skill-card-top">
+                            <div class="skill-icon-box">🗄️</div>
+                            <span class="skill-domain-tag">Database</span>
+                        </div>
+                        <h3 class="skill-name">SQL &amp; Database Management</h3>
+                        <p class="skill-desc">Relational schema design, structured queries, and efficient data persistence for applications.</p>
+                        <div class="skill-telemetry">
+                            <div class="telemetry-header">
+                                <span class="telemetry-label">PROFICIENCY INDEX</span>
+                                <span class="telemetry-val">82%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-level="82%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 12: Git, GitHub & Linux Workflow -->
+                    <div class="skill-card reveal-up" data-category="software" data-cursor="hover">
+                        <div class="card-glow"></div>
+                        <div class="skill-card-top">
+                            <div class="skill-icon-box">🛠️</div>
+                            <span class="skill-domain-tag">DevOps / Tools</span>
+                        </div>
+                        <h3 class="skill-name">Git, GitHub &amp; Dev Workflow</h3>
+                        <p class="skill-desc">Version control, collaborative branching, CLI proficiency, VS Code, and clean documentation.</p>
+                        <div class="skill-telemetry">
+                            <div class="telemetry-header">
+                                <span class="telemetry-label">PROFICIENCY INDEX</span>
+                                <span class="telemetry-val">90%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-level="90%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Infinite Cybernetic Tech Stream / Marquee -->
+                <div class="tech-marquee-wrapper reveal-up">
+                    <div class="marquee-track">
+                        <div class="marquee-group">
+                            <span class="marquee-item"><span>✦</span> ARTIFICIAL INTELLIGENCE</span>
+                            <span class="marquee-item"><span>✦</span> MACHINE LEARNING</span>
+                            <span class="marquee-item"><span>✦</span> DATA STRUCTURES &amp; ALGORITHMS</span>
+                            <span class="marquee-item"><span>✦</span> NEURAL NETWORKS</span>
+                            <span class="marquee-item"><span>✦</span> AUTONOMOUS ROBOTICS</span>
+                            <span class="marquee-item"><span>✦</span> FULL-STACK DEVELOPMENT</span>
+                            <span class="marquee-item"><span>✦</span> GAME PHYSICS &amp; AI</span>
+                            <span class="marquee-item"><span>✦</span> OBJECT-ORIENTED PROGRAMMING</span>
+                        </div>
+                        <!-- Duplicate Group for Seamless Loop -->
+                        <div class="marquee-group" aria-hidden="true">
+                            <span class="marquee-item"><span>✦</span> ARTIFICIAL INTELLIGENCE</span>
+                            <span class="marquee-item"><span>✦</span> MACHINE LEARNING</span>
+                            <span class="marquee-item"><span>✦</span> DATA STRUCTURES &amp; ALGORITHMS</span>
+                            <span class="marquee-item"><span>✦</span> NEURAL NETWORKS</span>
+                            <span class="marquee-item"><span>✦</span> AUTONOMOUS ROBOTICS</span>
+                            <span class="marquee-item"><span>✦</span> FULL-STACK DEVELOPMENT</span>
+                            <span class="marquee-item"><span>✦</span> GAME PHYSICS &amp; AI</span>
+                            <span class="marquee-item"><span>✦</span> OBJECT-ORIENTED PROGRAMMING</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+                <!-- ==================== FEATURED PROJECTS SECTION ==================== -->
+        <section class="projects-section section-padding" id="projects">
+            <div class="container">
+
+                <!-- Section Header -->
+                <div class="section-header reveal-up">
+                    <div class="section-tag">
+                        <span class="tag-number">03.</span>
+                        <span class="tag-text">// SYSTEM.DEPLOYMENTS &amp; LAB</span>
+                    </div>
+                    <h2 class="section-title">
+                        Featured <span class="gradient-text">Projects</span> &amp; Engineering Lab
+                    </h2>
+                    <p class="section-subtitle">
+                        A curated selection of intelligent systems, autonomous hardware prototypes, interactive games, and software architectures.
+                    </p>
+                </div>
+
+                <!-- Projects Filter Bar -->
+                <div class="projects-filter reveal-up" role="tablist" aria-label="Project Categories">
+                    <button class="proj-filter-btn active" data-filter="all" data-cursor="hover">All Deployments</button>
+                    <button class="proj-filter-btn" data-filter="ai" data-cursor="hover">AI &amp; ML</button>
+                    <button class="proj-filter-btn" data-filter="robotics" data-cursor="hover">Robotics</button>
+                    <button class="proj-filter-btn" data-filter="software" data-cursor="hover">Software Dev</button>
+                    <button class="proj-filter-btn" data-filter="gamedev" data-cursor="hover">Game Dev</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid" id="projects-grid">
+
+                    <!-- Project 1: AI & Computer Vision -->
+                    <article class="project-card reveal-up" data-category="ai" data-cursor="hover">
+                        <div class="card-glow"></div>
+                        <div class="project-visual visual-ai">
+                            <div class="visual-grid-overlay"></div>
+                            <div class="hud-element hud-scanner">
+                                <div class="scanner-ring"></div>
+                                <div class="scanner-line"></div>
+                                <span class="hud-icon">👁️</span>
+                            </div>
+                            <span class="project-id">SYS-01 // VISION.AI</span>
+                            <span class="project-status-pill">● Neural Model</span>
+                        </div>
+
+                        <div class="project-body">
+                            <div class="project-category">Artificial Intelligence &amp; CV</div>
+                            <h3 class="project-title">NeuroVision Gesture &amp; Object Engine</h3>
+                            <p class="project-excerpt">
+                                Real-time computer vision system capable of tracking hand landmarks, recognizing gestures, and classifying objects for touchless human-computer interaction.
+                            </p>
+
+                            <div class="project-stack">
+                                <span class="stack-pill">Python</span>
+                                <span class="stack-pill">OpenCV</span>
+                                <span class="stack-pill">MediaPipe</span>
+                                <span class="stack-pill">NumPy</span>
+                            </div>
+
+                            <div class="project-actions">
+                                <button class="btn-inspect" data-project="neurovision" data-cursor="hover">
+                                    <span>Inspect Architecture</span>
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+                                    </svg>
+                                </button>
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-icon-link" aria-label="View Source on GitHub" data-cursor="hover">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Robotics & Embedded Systems -->
+                    <article class="project-card reveal-up" data-category="robotics ai" data-cursor="hover">
+                        <div class="card-glow"></div>
+                        <div class="project-visual visual-robotics">
+                            <div class="visual-grid-overlay"></div>
+                            <div class="hud-element hud-radar">
+                                <div class="radar-sweep"></div>
+                                <span class="hud-icon">🤖</span>
+                            </div>
+                            <span class="project-id">SYS-02 // ROBO.NAV</span>
+                            <span class="project-status-pill">● Hardware + AI</span>
+                        </div>
+
+                        <div class="project-body">
+                            <div class="project-category">Robotics &amp; Autonomous Systems</div>
+                            <h3 class="project-title">AutoNav Obstacle-Avoiding Rover</h3>
+                            <p class="project-excerpt">
+                                Autonomous robotic rover utilizing ultrasonic sensor fusion, servo radar scanning, and real-time decision algorithms to navigate dynamic environments.
+                            </p>
+
+                            <div class="project-stack">
+                                <span class="stack-pill">C / C++</span>
+                                <span class="stack-pill">Arduino</span>
+                                <span class="stack-pill">Ultrasonic IoT</span>
+                                <span class="stack-pill">Motor Drivers</span>
+                            </div>
+
+                            <div class="project-actions">
+                                <button class="btn-inspect" data-project="autonav" data-cursor="hover">
+                                    <span>Inspect Architecture</span>
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+                                    </svg>
+                                </button>
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-icon-link" aria-label="View Source on GitHub" data-cursor="hover">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Game Development & Simulation -->
+                    <article class="project-card reveal-up" data-category="gamedev ai" data-cursor="hover">
+                        <div class="card-glow"></div>
+                        <div class="project-visual visual-gamedev">
+                            <div class="visual-grid-overlay"></div>
+                            <div class="hud-element hud-hex">
+                                <div class="hex-pulse"></div>
+                                <span class="hud-icon">🎮</span>
+                            </div>
+                            <span class="project-id">SYS-03 // ENGINE.SIM</span>
+                            <span class="project-status-pill">● Interactive Sim</span>
+                        </div>
+
+                        <div class="project-body">
+                            <div class="project-category">Game Development &amp; AI NPC</div>
+                            <h3 class="project-title">CyberPulse: Tactical AI Arena</h3>
+                            <p class="project-excerpt">
+                                Fast-paced sci-fi action prototype featuring custom physics, dynamic particle shaders, and enemy agents powered by Finite State Machines &amp; A* pathfinding.
+                            </p>
+
+                            <div class="project-stack">
+                                <span class="stack-pill">C# / C++</span>
+                                <span class="stack-pill">Game Engine</span>
+                                <span class="stack-pill">A* Pathfinding</span>
+                                <span class="stack-pill">FSM AI</span>
+                            </div>
+
+                            <div class="project-actions">
+                                <button class="btn-inspect" data-project="cyberpulse" data-cursor="hover">
+                                    <span>Inspect Architecture</span>
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+                                    </svg>
+                                </button>
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-icon-link" aria-label="View Source on GitHub" data-cursor="hover">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: Software Engineering & DSA Visualizer -->
+                    <article class="project-card reveal-up" data-category="software" data-cursor="hover">
+                        <div class="card-glow"></div>
+                        <div class="project-visual visual-software">
+                            <div class="visual-grid-overlay"></div>
+                            <div class="hud-element hud-bars">
+                                <span class="bar-v b1"></span>
+                                <span class="bar-v b2"></span>
+                                <span class="bar-v b3"></span>
+                                <span class="bar-v b4"></span>
+                                <span class="hud-icon">⚡</span>
+                            </div>
+                            <span class="project-id">SYS-04 // ALGO.CORE</span>
+                            <span class="project-status-pill">● Web App</span>
+                        </div>
+
+                        <div class="project-body">
+                            <div class="project-category">Software Engineering &amp; DSA</div>
+                            <h3 class="project-title">NexusAlgo Interactive Visualizer</h3>
+                            <p class="project-excerpt">
+                                Interactive web platform that visualizes complex sorting algorithms and graph traversal techniques (Dijkstra, BFS, DFS) with real-time speed controls.
+                            </p>
+
+                            <div class="project-stack">
+                                <span class="stack-pill">JavaScript (ES6+)</span>
+                                <span class="stack-pill">HTML5 Canvas</span>
+                                <span class="stack-pill">CSS3 Grid</span>
+                                <span class="stack-pill">DSA</span>
+                            </div>
+
+                            <div class="project-actions">
+                                <button class="btn-inspect" data-project="nexusdsa" data-cursor="hover">
+                                    <span>Inspect Architecture</span>
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+                                    </svg>
+                                </button>
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-icon-link" aria-label="View Source on GitHub" data-cursor="hover">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5: Machine Learning & Predictive Analytics -->
+                    <article class="project-card reveal-up" data-category="ai" data-cursor="hover">
+                        <div class="card-glow"></div>
+                        <div class="project-visual visual-ml">
+                            <div class="visual-grid-overlay"></div>
+                            <div class="hud-element hud-nodes">
+                                <span class="hud-icon">🧠</span>
+                            </div>
+                            <span class="project-id">SYS-05 // ML.ENGINE</span>
+                            <span class="project-status-pill">● Predictive AI</span>
+                        </div>
+
+                        <div class="project-body">
+                            <div class="project-category">Machine Learning &amp; Data Science</div>
+                            <h3 class="project-title">SynapsePredict Analytics Suite</h3>
+                            <p class="project-excerpt">
+                                End-to-end machine learning pipeline featuring automated data preprocessing, feature selection, and ensemble classification models with high accuracy.
+                            </p>
+
+                            <div class="project-stack">
+                                <span class="stack-pill">Python</span>
+                                <span class="stack-pill">Scikit-Learn</span>
+                                <span class="stack-pill">Pandas</span>
+                                <span class="stack-pill">Matplotlib</span>
+                            </div>
+
+                            <div class="project-actions">
+                                <button class="btn-inspect" data-project="synapseml" data-cursor="hover">
+                                    <span>Inspect Architecture</span>
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+                                    </svg>
+                                </button>
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-icon-link" aria-label="View Source on GitHub" data-cursor="hover">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 6: Full-Stack Developer Ecosystem -->
+                    <article class="project-card reveal-up" data-category="software" data-cursor="hover">
+                        <div class="card-glow"></div>
+                        <div class="project-visual visual-cyber">
+                            <div class="visual-grid-overlay"></div>
+                            <div class="hud-element hud-terminal">
+                                <span class="hud-icon">💻</span>
+                            </div>
+                            <span class="project-id">SYS-06 // WEB.OS</span>
+                            <span class="project-status-pill">● Live System</span>
+                        </div>
+
+                        <div class="project-body">
+                            <div class="project-category">Frontend &amp; Interactive Architecture</div>
+                            <h3 class="project-title">Cybernetic AI Portfolio OS</h3>
+                            <p class="project-excerpt">
+                                High-performance interactive developer portfolio built from scratch using pure HTML5 Canvas, glassmorphic UI architecture, and 60FPS vanilla JS animations.
+                            </p>
+
+                            <div class="project-stack">
+                                <span class="stack-pill">HTML5</span>
+                                <span class="stack-pill">CSS3 Glass</span>
+                                <span class="stack-pill">Vanilla JS</span>
+                                <span class="stack-pill">Canvas API</span>
+                            </div>
+
+                            <div class="project-actions">
+                                <button class="btn-inspect" data-project="portfolioos" data-cursor="hover">
+                                    <span>Inspect Architecture</span>
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+                                    </svg>
+                                </button>
+                                <a href="#hero" class="project-icon-link" aria-label="Back to Top" data-cursor="hover">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== PROJECT ARCHITECTURE MODAL ==================== -->
+        <div class="project-modal-overlay" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true">
+            <div class="project-modal-card">
+                <button class="modal-close-btn" id="modal-close" aria-label="Close Modal" data-cursor="hover">&times;</button>
+                
+                <div class="modal-header">
+                    <span class="modal-sys-id" id="modal-id">SYS-01 // ARCHITECTURE</span>
+                    <h3 class="modal-title" id="modal-title">Project Title</h3>
+                    <span class="modal-category" id="modal-category">Category</span>
+                </div>
+
+                <div class="modal-body">
+                    <p class="modal-description" id="modal-desc"></p>
+
+                    <div class="modal-section">
+                        <h4 class="modal-subheading">// KEY ENGINEERING HIGHLIGHTS</h4>
+                        <ul class="modal-features-list" id="modal-features"></ul>
+                    </div>
+
+                    <div class="modal-section">
+                        <h4 class="modal-subheading">// TECHNOLOGY STACK</h4>
+                        <div class="modal-tech-tags" id="modal-stack"></div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" id="modal-github" data-cursor="hover">
+                        <span>View GitHub Repository</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                            <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+                <!-- ==================== CERTIFICATIONS & MILESTONES SECTION ==================== -->
+        <section class="certifications-section section-padding" id="certifications">
+            <div class="container">
+
+                <div class="section-header reveal-up">
+                    <div class="section-tag">
+                        <span class="tag-number">03.5</span>
+                        <span class="tag-text">// SYSTEM.CREDENTIALS &amp; HONORS</span>
+                    </div>
+                    <h2 class="section-title">
+                        Certifications &amp; <span class="gradient-text">Academic Milestones</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        Verified technical training, algorithmic problem-solving credentials, and engineering laboratory milestones.
+                    </p>
+                </div>
+
+                <div class="cert-grid">
+
+                    <!-- Credential 1 -->
+                    <div class="cert-card reveal-up" data-cursor="hover">
+                        <div class="card-glow"></div>
+                        <div class="cert-top">
+                            <span class="cert-badge">🏅 VERIFIED // AI &amp; ML</span>
+                            <span class="cert-year">2024 — 2025</span>
+                        </div>
+                        <h3 class="cert-title">Artificial Intelligence &amp; Machine Learning Foundations</h3>
+                        <p class="cert-issuer">Specialization Track • Python, Scikit-Learn &amp; Neural Networks</p>
+                        <p class="cert-desc">
+                            Comprehensive training in supervised and unsupervised learning, data preprocessing, regression/classification pipelines, and neural network architectures.
+                        </p>
+                    </div>
+
+                    <!-- Credential 2 -->
+                    <div class="cert-card reveal-up" style="transition-delay: 0.1s;" data-cursor="hover">
+                        <div class="card-glow"></div>
+                        <div class="cert-top">
+                            <span class="cert-badge">⚡ VERIFIED // DSA &amp; CODE</span>
+                            <span class="cert-year">2024 — 2025</span>
+                        </div>
+                        <h3 class="cert-title">Data Structures, Algorithms &amp; Object-Oriented Programming</h3>
+                        <p class="cert-issuer">Core Software Engineering • C++, Python &amp; Java</p>
+                        <p class="cert-desc">
+                            Mastery of algorithmic complexity (Big-O), trees, graphs, dynamic programming, recursion, and modular OOP software design patterns.
+                        </p>
+                    </div>
+
+                    <!-- Credential 3 -->
+                    <div class="cert-card reveal-up" style="transition-delay: 0.2s;" data-cursor="hover">
+                        <div class="card-glow"></div>
+                        <div class="cert-top">
+                            <span class="cert-badge">🤖 VERIFIED // HARDWARE AI</span>
+                            <span class="cert-year">2024 — 2025</span>
+                        </div>
+                        <h3 class="cert-title">Robotics, Embedded Systems &amp; IoT Prototyping</h3>
+                        <p class="cert-issuer">Hands-On Engineering Lab • Arduino &amp; Sensor Fusion</p>
+                        <p class="cert-desc">
+                            Practical implementation of microcontroller interfacing, ultrasonic telemetry, PWM motor control, and autonomous obstacle-avoidance logic.
+                        </p>
+                    </div>
+
+                    <!-- Credential 4 -->
+                    <div class="cert-card reveal-up" style="transition-delay: 0.3s;" data-cursor="hover">
+                        <div class="card-glow"></div>
+                        <div class="cert-top">
+                            <span class="cert-badge">🎓 ACADEMIC // SRMU</span>
+                            <span class="cert-year">PRESENT</span>
+                        </div>
+                        <h3 class="cert-title">B.Tech CSE (AI &amp; ML) Undergraduate Honors Track</h3>
+                        <p class="cert-issuer">Shri Ramswaroop Memorial University (SRMU)</p>
+                        <p class="cert-desc">
+                            Pursuing Bachelor of Technology in Computer Science Engineering with specialized coursework in AI, Machine Learning, Computer Vision, and Software Development.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+                <!-- ==================== CONTACT SECTION ==================== -->
+        <section class="contact-section section-padding" id="contact">
+            <div class="container">
+
+                <!-- Section Header -->
+                <div class="section-header reveal-up">
+                    <div class="section-tag">
+                        <span class="tag-number">04.</span>
+                        <span class="tag-text">// SYSTEM.COMMUNICATION &amp; UPLINK</span>
+                    </div>
+                    <h2 class="section-title">
+                        Initialize <span class="gradient-text">Connection</span> &amp; Collaborate
+                    </h2>
+                    <p class="section-subtitle">
+                        Looking for a dedicated Software Developer or AI/ML Engineering intern? Or want to collaborate on a robotics or game dev project? Let's talk.
+                    </p>
+                </div>
+
+                <!-- Contact Grid -->
+                <div class="contact-grid">
+
+                    <!-- Left Column: Direct Comms & Social Matrix -->
+                    <div class="contact-info-card reveal-up" data-cursor="hover">
+                        <div class="card-glow"></div>
+                        <div class="contact-card-content">
+                            
+                            <div class="availability-banner">
+                                <span class="status-dot"></span>
+                                <span>OPEN FOR INTERNSHIPS &amp; COLLABORATIONS</span>
+                            </div>
+
+                            <h3 class="contact-heading">
+                                Let's Engineer the Future Together.
+                            </h3>
+                            <p class="contact-text">
+                                Whether you have a question, a software or AI project idea, or an internship opportunity, my inbox is always open.
+                            </p>
+
+                            <!-- Interactive Copy Email Box -->
+                            <div class="comm-block">
+                                <span class="comm-label">// DIRECT ELECTRONIC MAIL</span>
+                                <div class="copy-email-box">
+                                    <span class="email-address" id="email-text">anshulverma29102006@gmail.com</span>
+                                    <button type="button" class="copy-btn" id="copy-email-btn" data-cursor="hover" aria-label="Copy Email Address">
+                                        <span class="copy-btn-text" id="copy-btn-text">Copy</span>
+                                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Academic & Location Telemetry -->
+                            <div class="comm-block">
+                                <span class="comm-label">// BASE OF OPERATIONS</span>
+                                <div class="location-box">
+                                    <div class="loc-icon">📍</div>
+                                    <div class="loc-details">
+                                        <strong>Shri Ramswaroop Memorial University</strong>
+                                        <span>B.Tech CSE (AI &amp; ML) • Uttar Pradesh, India</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Social & Coding Profiles -->
+                            <div class="comm-block social-block">
+                                <span class="comm-label">// DEVELOPER NETWORKS</span>
+                                <div class="social-links-grid">
+                                    <a href="https://github.com/anshul170806" target="_blank" rel="noopener noreferrer" class="social-pill" data-cursor="hover">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                        </svg>
+                                        <span>GitHub</span>
+                                    </a>
+
+                                    <a href="https://www.linkedin.com/in/anshul-verma-09a790446/" target="_blank" rel="noopener noreferrer" class="social-pill" data-cursor="hover">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                            <rect x="2" y="9" width="4" height="12"></rect>
+                                            <circle cx="4" cy="4" r="2"></circle>
+                                        </svg>
+                                        <span>LinkedIn</span>
+                                    </a>
+
+                                    <a href="#projects" class="social-pill" data-cursor="hover">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <polyline points="16 18 22 12 16 6"></polyline>
+                                            <polyline points="8 6 2 12 8 18"></polyline>
+                                        </svg>
+                                        <span>Lab Builds</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Interactive Transmission Form -->
+                    <div class="contact-form-card reveal-up" style="transition-delay: 0.12s;" data-cursor="hover">
+                        <div class="card-glow"></div>
+                        <div class="contact-card-content">
+                            
+                            <div class="terminal-form-header">
+                                <div class="window-controls">
+                                    <span class="control red"></span>
+                                    <span class="control yellow"></span>
+                                    <span class="control green"></span>
+                                </div>
+                                <span class="terminal-title">uplink_transmission.sh</span>
+                            </div>
+
+                            <form class="contact-form" id="contact-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="sender-name" class="form-label">01 // YOUR NAME</label>
+                                        <input type="text" id="sender-name" class="form-input" placeholder="e.g. Rohan Sharma" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="sender-email" class="form-label">02 // YOUR EMAIL</label>
+                                        <input type="email" id="sender-email" class="form-input" placeholder="e.g. rohan@company.com" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="sender-subject" class="form-label">03 // TRANSMISSION TOPIC</label>
+                                    <select id="sender-subject" class="form-input form-select" required>
+                                        <option value="Software / AI Internship Opportunity">Software / AI Internship Opportunity</option>
+                                        <option value="AI, ML & Robotics Collaboration">AI, ML &amp; Robotics Collaboration</option>
+                                        <option value="Game Development / Software Project">Game Development / Software Project</option>
+                                        <option value="Academic / General Inquiry">Academic / General Inquiry</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="sender-message" class="form-label">04 // MESSAGE PAYLOAD</label>
+                                    <textarea id="sender-message" class="form-input form-textarea" rows="4" placeholder="Hello Anshul, I'd love to discuss an upcoming AI/Software project..." required></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-submit" id="submit-btn" data-cursor="hover">
+                                    <span id="submit-btn-text">Transmit Message Packet</span>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                    </svg>
+                                </button>
+
+                                <!-- Simulated Transmission Status Toast -->
+                                <div class="transmission-feedback" id="transmission-feedback" aria-live="polite"></div>
+                            </form>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== FUTURISTIC FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container footer-container">
+            
+            <div class="footer-brand">
+                <a href="#hero" class="nav-logo" data-cursor="hover">
+                    <span class="logo-bracket">&lt;</span>AV<span class="logo-slash">/</span><span class="logo-bracket">&gt;</span>
+                </a>
+                <p class="footer-tagline">
+                    <strong>Anshul Verma</strong> — B.Tech CSE (AI &amp; ML) @ Shri Ramswaroop Memorial University.
+                </p>
+            </div>
+
+            <div class="footer-telemetry">
+                <span class="telemetry-dot"></span>
+                <span class="mono-text" id="footer-clock">SYS.TIME // INITIALIZING...</span>
+            </div>
+
+            <div class="footer-right">
+                <span class="copyright-text">&copy; 2025 Anshul Verma. Engineered with Pure HTML, CSS &amp; JS.</span>
+                <a href="#hero" class="back-to-top" aria-label="Scroll Back to Top" title="Back to Top" data-cursor="hover">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <polyline points="18 15 12 9 6 15"></polyline>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </footer>
+        <!-- ==================== INTERACTIVE CYBER TERMINAL (CLI EASTER EGG) ==================== -->
+    <button type="button" class="terminal-launcher" id="terminal-launcher" onclick="toggleAITerminal(event)" aria-label="Toggle AI Command Terminal" data-cursor="hover">
+        <span class="term-prompt-icon">&gt;_</span>
+        <span class="term-launcher-text">AI Terminal</span>
+    </button>
+
+    <div class="cyber-terminal-window" id="cyber-terminal" aria-hidden="true">
+        <div class="term-window-header">
+            <div class="window-controls">
+                <span class="control red" id="term-close-dot" onclick="toggleAITerminal(event)" title="Close"></span>
+                <span class="control yellow"></span>
+                <span class="control green"></span>
+            </div>
+            <span class="term-window-title">anshul@srmu-ai-shell:~</span>
+            <button type="button" class="term-close-btn" id="term-close-btn" onclick="toggleAITerminal(event)" aria-label="Close Terminal">&times;</button>
+        </div>
+
+        <!-- Quick Command Chips for 1-Click Testing -->
+        <div class="term-quick-bar">
+            <span class="quick-label">Quick Run:</span>
+            <button type="button" class="cmd-chip" data-cmd="help">help</button>
+            <button type="button" class="cmd-chip" data-cmd="whoami">whoami</button>
+            <button type="button" class="cmd-chip" data-cmd="srmu">srmu</button>
+            <button type="button" class="cmd-chip" data-cmd="skills">skills</button>
+            <button type="button" class="cmd-chip" data-cmd="sudo hire anshul">sudo hire</button>
+            <button type="button" class="cmd-chip" data-cmd="clear">clear</button>
+        </div>
+
+        <div class="term-output" id="term-output">
+            <div class="term-line"><span class="term-sys">AV-OS Neural Shell v2.5 initialized...</span></div>
+            <div class="term-line">Welcome! Type <span class="term-cmd-highlight">help</span> or click any command chip above to inspect Anshul Verma's system telemetry.</div>
+        </div>
+
+        <form class="term-input-row" id="term-form">
+            <span class="term-user-prompt">visitor@av-os:~$</span>
+            <input type="text" class="term-input" id="term-input" placeholder="Type help, whoami, srmu, skills..." autocomplete="off">
+        </form>
+    </div>
+    </main>
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
